@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Margin and Padding</title>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div class="mt-5">
+            <h2>Spacing</h2>
+
+            <p>Bootstrap 5 has a wide range of responsive margin and padding utility classes.
+                They work for all breakpoints: <code>xs</code> (&lt;=576px), <code>sm</code> (&gt;=576px),
+                <code>md</code> (&gt;=768px), <code>lg</code> (&gt;=992px), <code>xl</code> (&gt;=1200px) or
+                <code>xxl</code> (&gt;=1400px):
+            </p>
+
+            <p>The classes are used in the format: <code>{property}{sides}-{size}</code> for <code>xs</code> and
+                <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>,
+                <code>lg</code>, <code>xl</code> and <code>xxl</code>.</p>
+
+            <p>Where <em>property</em> is one of:</p>
+
+            <ul>
+                <li><code>m</code> - sets <code>margin</code></li>
+                <li><code>p</code> - sets <code>padding</code></li>
+            </ul>
+
+            <p>Where <em>sides</em> is one of:</p>
+
+            <ul>
+                <li><code>t</code> - sets <code>margin-top</code> or <code>padding-top</code></li>
+                <li><code>b</code> - sets <code>margin-bottom</code> or <code>padding-bottom</code></li>
+                <li><code>s</code> - sets <code>margin-left</code> or <code>padding-left</code></li>
+                <li><code>e</code> - sets <code>margin-right</code> or <code>padding-right</code></li>
+                <li><code>x</code> - sets both <code>padding-left</code> and
+                    <code>padding-right</code> or <code>margin-left</code> and
+                    <code>margin-right</code>
+                </li>
+                <li><code>y</code> - sets both <code>padding-top</code> and
+                    <code>padding-bottom</code> or <code>margin-top</code> and
+                    <code>margin-bottom</code>
+                </li>
+                <li>blank - sets a <code>margin</code> or <code>padding</code>
+                    on all 4 sides of the element</li>
+            </ul>
+
+            <p>Where <em>size</em> is one of:</p>
+
+            <ul>
+                <li><code>0</code> - sets <code>margin</code> or <code>padding</code> to <code>0</code></li>
+                <li><code>1</code> - sets <code>margin</code> or <code>padding</code> to <code>.25rem</code></li>
+                <li><code>2</code> - sets <code>margin</code> or <code>padding</code> to <code>.5rem</code></li>
+                <li><code>3</code> - sets <code>margin</code> or <code>padding</code> to <code>1rem</code></li>
+                <li><code>4</code> - sets <code>margin</code> or <code>padding</code> to <code>1.5rem</code></li>
+                <li><code>5</code> - sets <code>margin</code> or <code>padding</code> to <code>3rem</code></li>
+                <li><code>auto</code> - sets <code>margin</code> to auto</li>
+            </ul>
+            <h2>Example:</h2>
+            <div class="pt-4 bg-warning">I only have a top padding (1.5rem)</div>
+            <div class="p-5 bg-success">I have a padding on all sides (3rem)</div>
+            <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem) and a bottom padding (3rem)</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

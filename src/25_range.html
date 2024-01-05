@@ -12,27 +12,37 @@
 <body>
     <div class="container mb-5">
         <div class="mt-5">
+            <h2>Custom Range</h2>
+            <p>To create a custom range menu, add the .form-range class to the input element with type="range":</p>
+            <form action="/action_page.php">
+                <label for="customRange" class="form-label">Custom range</label>
+                <input type="range" class="form-range" id="customRange" name="points">
 
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
         </div>
 
         <div class="mt-5">
+            <h2>Steps in a Range</h2>
+            <p>By default, the interval between the range numbers is 1. You can change it by using the step attribute:
+            </p>
+            <form action="/action_page.php">
+                <label for="customRange" class="form-label">Custom range</label>
+                <input type="range" class="form-range" id="customRange" step="10" name="points">
 
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
         </div>
 
         <div class="mt-5">
+            <h2>Min and Max Range</h2>
+            <p>Use the min and/or max attribute to specify the minimum/maximum value of a range:</p>
+            <form action="/action_page.php">
+                <label for="customRange" class="form-label">Custom range</label>
+                <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
 
-        </div>
-
-        <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
         </div>
     </div>
 </body>

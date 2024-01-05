@@ -11,29 +11,127 @@
 
 <body>
     <div class="container">
+        <mark>Note: Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available
+            columns):</mark>
+
         <div class="mt-5">
-            <div class="row">
-                <div class="col">col1</div>
-                <div class="col">col2</div>
-                <div class="col">col3</div>
+            <div class="row text-white">
+                <div class="col bg-primary">col1</div>
+                <div class="col bg-success">col2</div>
+                <div class="col bg-danger">col3</div>
             </div>
         </div>
 
         <div class="mt-5">
-            <div class="row">
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
+            <div class="row text-white">
+                <div class="col bg-primary">col1</div>
+                <div class="col-6 bg-success">col2</div>
+                <div class="col bg-danger">col3</div>
             </div>
         </div>
 
         <div class="mt-5">
-            <div class="row">
-                <div class="col-4">col-4</div>
-                <div class="col-8">col-8</div>
+            <div class="row text-white">
+                <div class="col-md bg-primary">col1</div>
+                <div class="col-md bg-success">col2</div>
+                <div class="col-md bg-danger">col3</div>
             </div>
         </div>
+
+        <div class="mt-5">
+            <div class="row text-white">
+                <div class="col-3 bg-primary">col-3</div>
+                <div class="col-3 bg-success">col-3</div>
+                <div class="col-3 bg-danger">col-3</div>
+                <div class="col-3 bg-info">col-3</div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="row text-white">
+                <div class="col-4 bg-primary">col-4</div>
+                <div class="col-8 bg-success">col-8</div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="row text-white">
+                <div class="col-sm-4 bg-primary">col-4</div>
+                <div class="col-sm-8 bg-success">col-8</div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2>Row Cols</h2>
+            <p>The .row-cols-* classes are used to set the number of columns that should appear next to each other.</p>
+
+            <div class="row row-cols-1">
+                <div class="col bg-success">1 of 2</div>
+                <div class="col bg-warning">2 of 2</div>
+            </div>
+            <br>
+            <div class="row row-cols-2">
+                <div class="col bg-success">1 of 4</div>
+                <div class="col bg-warning">2 of 4</div>
+                <div class="col bg-success">3 of 4</div>
+                <div class="col bg-warning">4 of 4</div>
+            </div>
+            <br>
+            <div class="row row-cols-3">
+                <div class="col bg-success">1 of 6</div>
+                <div class="col bg-warning">2 of 6</div>
+                <div class="col bg-success">3 of 6</div>
+                <div class="col bg-warning">4 of 6</div>
+                <div class="col bg-success">5 of 6</div>
+                <div class="col bg-warning">6 of 6</div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h1>Mix and Match</h1>
+            <p>Resize the browser window to see the effect.</p>
+            <p>This example demonstrates a 50%/50% split on extra small devices and 75%/25% split on larger devices.</p>
+
+            <div class="row text-white">
+                <div class="col-6 col-sm-9 bg-success">col-6 col-sm-9</div>
+                <div class="col-6 col-sm-3 bg-warning">col-6 col-sm-3</div>
+            </div>
+
+            <br>
+            <p>This example demonstrates a 50%/50% split on extra small, small and medium devices and 75%/25% split
+                on large and xlarge devices.</p>
+
+            <div class="row text-white">
+                <div class="col-6 col-lg-9 bg-success">col-6 col-lg-9</div>
+                <div class="col-6 col-lg-3 bg-warning">col-6 col-lg-3</div>
+            </div>
+
+            <br>
+            <p>This example demonstrates a 75%/25% split on small devices, a 50%/50% split on medium devices, and a
+                33%/66% split on large and xlarge devices. On extra small devices, it will automatically stack (100%).
+            </p>
+
+            <div class="row text-white">
+                <div class="col-sm-9 col-md-6 col-lg-4 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+                <div class="col-sm-3 col-md-6 col-lg-8 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+            </div>
+        </div>
+
+        <div class="mt-5 mb-5">
+            <h2>Nested Columns</h2>
+            <p>Add columns inside other columns:</p>
+            <div class="row">
+                <div class="col-8 bg-warning p-4">
+                    .col-8
+                    <div class="row">
+                        <div class="col-6 bg-light p-2">.col-6</div>
+                        <div class="col-6 bg-secondary p-2">.col-6</div>
+                    </div>
+                </div>
+                <div class="col-4 bg-success p-4">.col-4</div>
+            </div>
+        </div>
+
 
     </div>
 </body>

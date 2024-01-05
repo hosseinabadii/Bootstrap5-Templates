@@ -12,27 +12,47 @@
 <body>
     <div class="container mb-5">
         <div class="mt-5">
-
+            <h2>Floating Labels - Inputs</h2>
+            <p>Click inside the input field to see the floating label effect:</p>
+            <div class="w3-note w3-panel">
+                <p><strong>Notes on floating labels:</strong> The
+                    &lt;label&gt; elements must come after the &lt;input&gt; element, and the <code>placeholder</code>
+                    attribute
+                    is required for each
+                    &lt;input&gt; element (even though it is not shown).</p>
+            </div>
+            <form action="/action_page.php">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating mt-3">
+                    <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                    <label for="comment">Comments</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
 
         <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
-        </div>
-
-        <div class="mt-5">
-
+            <h2>Floating Labels - Select</h2>
+            <p>You can also use "floating-labels" on select menus. However, they will not float/get animated. The label will always appear in the top left corner, inside the select menu:</p>
+            <form action="/action_page.php">
+              <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="sel1" name="sellist">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <label for="sel1" class="form-label">Select list (select one):</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 </body>
